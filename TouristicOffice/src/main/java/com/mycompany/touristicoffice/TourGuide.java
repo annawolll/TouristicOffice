@@ -4,6 +4,8 @@
  */
 package com.mycompany.touristicoffice;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author User
@@ -16,6 +18,8 @@ public class TourGuide extends Person{
        super(ID, name, surname, password);
     }
     
-    
+    public void printAssignedTrips(Office of){
+    ArrayList<Trip> foundTrips=of.searchTripsforGuide(this);
+    }
     
 }

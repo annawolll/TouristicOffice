@@ -18,6 +18,14 @@ public class Person {
         this.surname = surname;
         this.password = password;
     }
+
+    public int getID() {
+        return ID;
+    }
+
+    public String getPassword() {
+        return password;
+    }
     
     
     

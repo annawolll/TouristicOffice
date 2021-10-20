@@ -12,11 +12,11 @@ import java.util.Date;
 public class Trip {
     private int ID, maxSeats, boughtSeats;
     private String country,city;
-    private Date departureDate, arrivalDate;
+    private String departureDate, arrivalDate;
     private double price;
     TourGuide guide;
 
-    public Trip(int ID, int maxSeats,int boughtSeats, String country, String city, Date depDate, Date arrDate, double price, TourGuide tg) {
+    public Trip(int ID, int maxSeats,int boughtSeats, String country, String city, String depDate, String arrDate, double price, TourGuide tg) {
         this.ID = ID;
         this.maxSeats=maxSeats;
         this.boughtSeats=boughtSeats;
@@ -30,6 +30,38 @@ public class Trip {
 
     public int getID() {
         return ID;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getDepartureDate() {
+        return departureDate;
+    }
+
+    public String getArrivalDate() {
+        return arrivalDate;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public TourGuide getGuide() {
+        return guide;
+    }
+
+    public int getMaxSeats() {
+        return maxSeats;
+    }
+
+    public int getBoughtSeats() {
+        return boughtSeats;
     }
     
     

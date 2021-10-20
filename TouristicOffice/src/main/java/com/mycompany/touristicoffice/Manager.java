@@ -9,10 +9,14 @@ package com.mycompany.touristicoffice;
  * @author User
  */
 public class Manager {
-    String password;
+    private String password;
 
     public Manager(String password) {
         this.password = password;
+    }
+
+    public String getPassword() {
+        return password;
     }
     
     
