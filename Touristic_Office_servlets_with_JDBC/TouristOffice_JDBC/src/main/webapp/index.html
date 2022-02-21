@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Touristic Office web page</title>
+        
+    </head>
+    <body>
+        <h1>Welcome to our Touristic Office!</h1>
+
+        <form action="LoggingRegisteringServlet">
+            
+            <div style="width: 300px; float:left; height:200px; margin:10px">
+            
+            <div> <input type="radio" id="client" name="person" value="logclient">
+                <label for="client">I am logging in as a Client.</label> </div>
+            <div> <input type="radio" id="employee" name="person" value="logemployee">
+                <label for="employee">I am logging in as an Employee.</label> </div> 
+            <div> <input type="radio" id="manager" name="person" value="logmanager">
+                <label for="manager">I am logging in as the Manager.</label> </div> 
+
+
+            <label for="login">Login:</label><br>
+            <input type="text" name="login"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" name="password"><br>
+            </div>
+            
+            
+            <div style="width: 300px; float:left; height:200px; margin:10px">
+            
+            <div> <input type="radio" id="Rclient" name="person" value="regclient">
+                <label for="client">I am registering as a Client.</label> </div>
+            <div> <input type="radio" id="Remployee" name="person" value="regemployee">
+                <label for="employee">I am registering as an Employee.</label> </div>
+
+            <label for="fname">First name:</label><br>
+            <input type="text"  name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname"><br>
+            <label for="newPassword">New Password</label><br>
+            <input type="text" name="newPassword"><br><br>
+            
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+            <input type="submit" value="Log in/Register" />
+
+        </form>
+
+        <hr>
+    </body>
+</html>
+
